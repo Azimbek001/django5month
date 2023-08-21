@@ -1,9 +1,11 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from movie_app.serializers import DirectorSerializer,MovieSerializer,ReviewSerializer
+from movie_app.serializers import DirectorSerializer,MovieSerializer,ReviewSerializer, ReviewValidateSerializer
 from movie_app.models import Director, Movie, Review
 from django.shortcuts import get_object_or_404
+from rest_framework.generics import ListAPIView
+from rest_framework.pagination import PageNumberPagination
 
 @api_view(['GET'])
 def director_list(request):
@@ -48,3 +50,10 @@ def get_review(request, id):
     review = get_object_or_404(Review, id=id)
     serializer = ReviewSerializer(review ,many=False)
     return Response(data=serializer.data)
+
+
+class MoviesReviewAPIView(ListAPIView):
+    queryset = Movie.objects.all()
+    serializer_class = MovieSerializer
+    pagination_class = PageNumberPagination
+
