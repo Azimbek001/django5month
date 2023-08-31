@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Director(models.Model):
-    name = models.CharField(max_length=100, verbose_name="Имя директора")
+    name = models.CharField(max_length=10, verbose_name="Имя директора")
 
     @property
     def movie_count(self):
@@ -13,9 +13,9 @@ class Director(models.Model):
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    duration = models.PositiveIntegerField()
+    title = models.CharField(max_length=50)
+    description = models.TextField(max_length=1000)
+    duration = models.PositiveIntegerField(default=0)
     director = models.ForeignKey(Director, on_delete=models.CASCADE)
 
     @property

@@ -7,7 +7,8 @@
     <list default="true" id="3a3c42fb-c652-4348-8e06-25b31630115d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_app/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,9 @@
       <workItem from="1692288319039" duration="3860000" />
       <workItem from="1692629308869" duration="5134000" />
       <workItem from="1692643610635" duration="1239000" />
-      <workItem from="1692812477273" duration="2929000" />
+      <workItem from="1692812477273" duration="4190000" />
+      <workItem from="1693239727286" duration="1409000" />
+      <workItem from="1693497834467" duration="1594000" />
     </task>
     <servers />
   </component>
