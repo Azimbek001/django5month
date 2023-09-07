@@ -35,7 +35,7 @@ class Movie(models.Model):
 class Review(models.Model):
     text = models.TextField(max_length=1000, verbose_name="Коментарии")
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    stars = models.PositiveIntegerField(max_length=5, default="Звезды")
+    stars = models.PositiveIntegerField()
 
     def __str__(self):
         return self.text
